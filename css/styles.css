@@ -131,6 +131,10 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+justify-content: center;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -138,6 +142,8 @@ nav h1 a {
   text-align: center;
 }
 #restaurants-list li {
+  display: flex;
+flex-direction: column;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
@@ -183,16 +189,21 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  width: 100%;
+}
+
 .inside header {
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
-  position: fixed;
+  position: relative;
   right: 0;
   top: 80px;
   width: 50%;
@@ -273,3 +284,4 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
