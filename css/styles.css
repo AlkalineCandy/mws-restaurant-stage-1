@@ -285,3 +285,30 @@ flex-direction: column;
   color: #666;
 }
 
+/* Media queries */
+
+@media screen and (min-width: 460px) {
+  .filter-options {
+    display: block;
+    text-align: left; 
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+ 
+  #restaurants-list li {
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+  }
+  #restaurant-container, #reviews-container {
+    padding: 20px 15px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .filter-options {
+    padding: 15px 40px 15px 40px;
+  }
+}
